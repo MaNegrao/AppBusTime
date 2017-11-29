@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HorarioComponent } from '../horario/horario';
 
 /**
  * Generated class for the LinhaComponent component.
@@ -12,11 +13,13 @@ import { Component } from '@angular/core';
 })
 export class LinhaComponent {
 
-  text: string;
+  private name: string;
+  private pref: number;
+  private horarios: Array<HorarioComponent>;
 
   constructor() {
-    console.log('Hello LinhaComponent Component');
-    this.text = 'Hello World';
+    
+    this.name = name;
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LinhaComponent } from '../linha/linha';
 
 /**
  * Generated class for the EmpresaComponent component.
@@ -12,13 +13,13 @@ import { Component } from '@angular/core';
 })
 export class EmpresaComponent {
   
-  name: string;
-  let linhas: Array<linha>;
-  let text: string;
+  l = new LinhaComponent();
+
+  private name: string;
+  private linhas: Array<LinhaComponent>;
 
   constructor() {
-    console.log('Hello EmpresaComponent Component');
-    this.text = 'Hello World';
+    this.name = "Tiquin";
   }
 
 }
