@@ -18,8 +18,8 @@ export class EmpresaComponent {
   private name: string;
   private linhas: Array<LinhaComponent>;
 
-  constructor() {
-    this.name = "Tiquin";
+  constructor(name: string) {
+    this.name = name;
   }
 
 }
