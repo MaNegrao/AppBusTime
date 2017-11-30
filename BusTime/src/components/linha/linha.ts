@@ -17,8 +17,7 @@ export class LinhaComponent {
   private pref: number;
   private horarios: Array<HorarioComponent>;
 
-  constructor() {
-    
+  constructor(name: string){
     this.name = name;
   }
 

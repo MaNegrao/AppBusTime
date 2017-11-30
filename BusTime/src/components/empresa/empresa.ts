@@ -12,13 +12,12 @@ import { LinhaComponent } from '../linha/linha';
   templateUrl: 'empresa.html'
 })
 export class EmpresaComponent {
+
+  name: string;
+  linhas = new Array<LinhaComponent>();
   
-  l = new LinhaComponent();
-
-  private name: string;
-  private linhas: Array<LinhaComponent>;
-
-  constructor(name: string) {
+  constructor(name: string, linha: LinhaComponent) {
+    length = this.linhas.push(linha)
     this.name = name;
   }
 
