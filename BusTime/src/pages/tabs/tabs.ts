@@ -10,11 +10,7 @@ import { FavPage } from '../fav/fav';
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
-  empresas = new Array<EmpresaComponent>();
-  saopedro06 = new LinhaComponent('São Pedro 06');
-  tiquin = new EmpresaComponent('Tiquin', this.saopedro06);
-  length = this.empresas.push(this.tiquin);
-
+  
   tab1Root = HomePage;
   tab2Root = ContactPage;
   tab3Root = FavPage;

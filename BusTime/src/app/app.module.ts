@@ -7,6 +7,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { FavPage } from "../pages/fav/fav";
 import { TabsPage } from '../pages/tabs/tabs';
+import { EmpresaComponent } from '../components/empresa/empresa'
+import { LinhaComponent } from '../components/linha/linha'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,6 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     ContactPage,
     HomePage,
+    EmpresaComponent,
+    LinhaComponent,
     FavPage,
     TabsPage
   ],

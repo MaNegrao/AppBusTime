@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { LinhaComponent } from '../linha/linha';
 
 /**
@@ -12,13 +12,19 @@ import { LinhaComponent } from '../linha/linha';
   templateUrl: 'empresa.html'
 })
 export class EmpresaComponent {
-
-  name: string;
-  linhas = new Array<LinhaComponent>();
+  @Input() model: Empresa;
   
-  constructor(name: string, linha: LinhaComponent) {
-    length = this.linhas.push(linha)
-    this.name = name;
-  }
+  constructor(){
 
+  }
+}
+
+export class Empresa{
+  name: string; 
+  linhas: Array<string>;
+
+  constructor(name: string){
+    this.name = name;
+    this.linhas = ["linha 1", "segunda linha"];
+  }
 }

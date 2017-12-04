@@ -13,12 +13,10 @@ import { HorarioComponent } from '../horario/horario';
 })
 export class LinhaComponent {
 
-  private name: string;
-  private pref: number;
-  private horarios: Array<HorarioComponent>;
+  //name: string;
 
-  constructor(name: string){
-    this.name = name;
+  constructor(){
+  //  this.name = name;
   }
 
 }
