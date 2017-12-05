@@ -1,22 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HorarioComponent } from '../horario/horario';
+import { Empresa, EmpresaComponent } from '../empresa/empresa'
 
-/**
- * Generated class for the LinhaComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'linha',
   templateUrl: 'linha.html'
 })
 export class LinhaComponent {
-
-  //name: string;
-
+  @Input() model: Linha;
   constructor(){
-  //  this.name = name;
+    
   }
+}
 
+export class Linha{
+  name: string;
+  prefixo: number;
+  horarios: Array<string>;
+  
+  constructor(name: string, prefixo: number){
+    this.name = name;
+    this.prefixo = prefixo;
+  }
 }

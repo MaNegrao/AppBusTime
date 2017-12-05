@@ -1,12 +1,6 @@
-import { Component,Input } from '@angular/core';
-import { LinhaComponent } from '../linha/linha';
+import { Component, Input} from '@angular/core';
+import { Linha } from '../linha/linha'
 
-/**
- * Generated class for the EmpresaComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'empresa',
   templateUrl: 'empresa.html'
@@ -21,10 +15,13 @@ export class EmpresaComponent {
 
 export class Empresa{
   name: string; 
-  linhas: Array<string>;
+  linhas: Array<Linha> = [];
+  regional: Linha;
 
   constructor(name: string){
     this.name = name;
-    this.linhas = ["linha 1", "segunda linha"];
+    this.regional = new Linha('H. Regional', 10);
+    this.linhas.push(this.regional);
   }
+  
 }

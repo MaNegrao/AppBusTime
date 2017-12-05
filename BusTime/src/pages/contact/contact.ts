@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Empresa } from '../../components/empresa/empresa'
+import { Linha } from '../../components/linha/linha'
 
 @Component({
   selector: 'page-contact',
@@ -8,9 +9,10 @@ import { Empresa } from '../../components/empresa/empresa'
 })
 export class ContactPage {
   tiquin: Empresa;
+  /*li = new Linha('H. Regional', 10);*/
+
   constructor(public navCtrl: NavController) {
     this.tiquin = new Empresa('Tiquin');
-    console.log("tiquin criada" + this.tiquin.name);
   }
 
 }
