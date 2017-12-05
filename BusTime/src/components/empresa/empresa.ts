@@ -15,13 +15,11 @@ export class EmpresaComponent {
 
 export class Empresa{
   name: string; 
-  linhas: Array<Linha> = [];
-  regional: Linha;
+  linhas: Linha;
 
-  constructor(name: string){
+  constructor(name: string, li: Linha){
     this.name = name;
-    this.regional = new Linha('H. Regional', 10);
-    this.linhas.push(this.regional);
+    this.linhas = li;
   }
   
 }
